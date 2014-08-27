@@ -89,7 +89,18 @@ Theme.Origin = Theme({
   },
   seriesOptions : {
     lineCfg : lineCfg,
-    areaCfg : lineCfg,
+    areaCfg : {
+      line : {
+        'stroke-width': .5,
+        'stroke-linejoin': 'round',
+        'stroke-linecap': 'round'
+      },
+      lineActived : {
+        'stroke-width': 1
+      },
+      animate : true,
+      markers : lineCfg.markers
+    },
     flagCfg: {
       line: {
           'stroke': '#000000',
