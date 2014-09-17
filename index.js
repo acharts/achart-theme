@@ -106,7 +106,7 @@ Theme.Origin = Theme({
           flag:{
               distance: -15,
               line: {
-                  'stroke': '#000000',
+                  'stroke': '#333',
                   'stroke-width': 1
               },
               shapeType: 'rect',
