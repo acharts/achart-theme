@@ -102,21 +102,31 @@ Theme.Origin = Theme({
       markers : lineCfg.markers
     },
     flagCfg: {
-      line: {
-          'stroke': '#000000',
-          'stroke-width': 1
+      flags:{
+          flag:{
+              distance: -15,
+              line: {
+                  'stroke': '#000000',
+                  'stroke-width': 1
+              },
+              shapeType: 'rect',
+              shapeCfg: {
+                  stroke: '#333',
+                  width: 22,
+                  height: 22
+              },
+              title: 'A',
+              titleCfg: {
+                  rotate : 90,
+                  fill : '#333333',
+                  'font-size':13,
+                  'font-weight' : 'bold'
+              },
+              text: ''
+          }
       },
-      flag: {
-          'fill' : '#ffffff',
-          'stroke': '#000000',
-          'stroke-width': 1,
-          'r': 5
-      },
-      distance: -5,
       duration : 1000,
       animate: true,
-      custom: false,
-      html: '<img width="21" height="19" src="https://i.alipayobjects.com/i/ecmng/png/201408/3Ds0U7nGOD_src.png" />',
       onSeries: 'xaxis'
     },
     bubbleCfg : {
