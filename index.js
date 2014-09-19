@@ -144,7 +144,8 @@ Theme.Origin = Theme({
   },
   tooltip : {
     x : -999,
-    y : -999
+    y : -999,
+    offset : 5
   }
 
 });
