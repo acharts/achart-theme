@@ -143,7 +143,7 @@ Theme.Origin = Theme({
                   fill : 'red'
               },
               fallShape: {
-                  stroke : 'red',
+                  stroke : 'green',
                   fill : 'green'
               }
           }
