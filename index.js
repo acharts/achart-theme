@@ -47,6 +47,8 @@ Theme.Origin = Theme({
   plotCfg : {
     margin : [50]
   },
+  yTickCounts : [3,5],
+  xTickCounts : [5,10],
   title : {
     'font-size' : '16px',
     'font-family' : 'SimSun,Georgia, Times, serif',
