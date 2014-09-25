@@ -129,6 +129,26 @@ Theme.Origin = Theme({
       animate: true,
       onSeries: 'xaxis'
     },
+    candlestickCfg: {
+      candlesticks: {
+          candlestick:{
+              riseLine : {
+                  stroke: 'red'
+              },
+              fallLine : {
+                  stroke: 'green'
+              },
+              riseShape: {
+                  stroke : 'red',
+                  fill : 'red'
+              },
+              fallShape: {
+                  stroke : 'green',
+                  fill : 'green'
+              }
+          }
+      }
+    },
     bubbleCfg : {
       circle : {
           'stroke-width' : 1,
