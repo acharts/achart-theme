@@ -283,8 +283,20 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
     areaCfg : {
       markers: {
         marker:{
-          single: true
+          single: true,
+          fill: '#fff',
+          radius: 6,
+          'stroke-width': 4
+        },
+        actived: {
+          fill: '#fff',
+          'stroke-width': 5,
+          stroke: null
         }
+      },
+      area :{
+        'fill-opacity': .5,
+        stroke: null
       }
     },
     pieCfg : {
