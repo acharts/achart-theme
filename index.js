@@ -230,7 +230,7 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
     title : {
       text : '',
       rotate : -90,
-      x : -30,
+      x : -35,
       fill : "#444"
     },
     position:'left',
@@ -257,7 +257,7 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
       }
     }
   },
-  colors : [ '#4dceff','#79c850','#ffb65d','#fc694b','#9a9792','#7179cb'],
+  colors : [ '#4dceff','#79c850','#ffb65d','#fc694b','#7179cb','#9a9792'],
   symbols : ['circle'],
   seriesOptions : {
     lineCfg : {
@@ -282,8 +282,8 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
     },
     areaCfg : {
       markers: {
+        single: true,
         marker:{
-          single: true,
           fill: '#fff',
           radius: 6,
           'stroke-width': 4
@@ -300,7 +300,7 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
       }
     },
     pieCfg : {
-      colors : [ '#4dceff','#79c850','#ffb65d','#fc694b','#9a9792','#7179cb'],
+      colors : [ '#4dceff','#79c850','#ffb65d','#fc694b','#7179cb','#9a9792'],
       labels : {
         distance : 30,
         label : {
