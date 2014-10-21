@@ -197,13 +197,10 @@ Theme.Base = Theme.initTheme(Theme.Origin, {
 });
 
 
-
-
-
 // smooth风格的基础样式,色系分布均为6种.
 Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
   title : {
-    'fill' : '#444'
+    'fill' : '#505050'
   },
   subTitle : {
     'fill' : '#999'
@@ -213,15 +210,12 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
       'stroke-width' : 1,
       'stroke' : '#a7a7a7'
     },
-    tickLine : {
-      'stroke' : '#a7a7a7',
-      'stroke-width' : 1,
-      value : 5
-    },
+    tickLine : null,
     labels : {
       label : {
         y : 12,
-        fill: "#444"
+        fill: "#444444",
+        'font-size': '12'
       }
     }
   },
@@ -242,27 +236,74 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
     position:'left',
     labels : {
       label : {
-        x : -12,
-        fill: "#444"
+        x : -20,
+        fill: "#444444",
+        'font-size': '12'
       }
     }
   },
   plotCfg : {
     margin : [50,50,100]
   },
-  colors : [ '#00a3d7','#6ebb46','#f6c100','#ff6a00','#e32400','#423ba8'],
-  symbols : ['circle','diamond','square','triangle','triangle-down'],
+  legend: {
+    back: null,
+    spacingX: 30,
+    itemCfg : { //子项的配置信息
+      label : {
+        fill : '#a7a7a7',
+        'text-anchor' : 'start',
+        cursor : 'pointer',
+        'font-size': '12'
+      }
+    }
+  },
+  colors : [ '#4dceff','#79c850','#ffb65d','#fc694b','#9a9792','#7179cb'],
+  symbols : ['circle'],
   seriesOptions : {
+    lineCfg : {
+      line: {
+        'stroke-width': 4
+      },
+      lineActived : {
+        'stroke-width': 4
+      },
+      markers: {
+        marker: {
+          fill: '#fff',
+          radius: 6,
+          'stroke-width': 4
+        },
+        actived: {
+          fill: '#fff',
+          'stroke-width': 5,
+          stroke: null
+        }
+      }
+    },
+    areaCfg : {
+      markers: {
+        marker:{
+          single: true
+        }
+      }
+    },
     pieCfg : {
-      colors : [ '#00a3d7','#6ebb46','#f6c100','#ff6a00','#e32400','#423ba8']
+      colors : [ '#4dceff','#79c850','#ffb65d','#fc694b','#9a9792','#7179cb'],
+      labels : {
+        distance : 30,
+        label : {
+            'font-size' : '12',
+            fill : '#a7a7a7'
+        }
+      }
     }
   },
   tooltip: {
     offset : 10,
     title : {
-      'font-size' : '10',
+      'font-size' : '12',
       'text-anchor' : 'start',
-      x : 5,
+      x : 8,
       y : 15,
       fill:"#444"
     },
@@ -273,18 +314,18 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
       fill:"#444"
     },
     crossLine : {
-      stroke : "#a7a7a7"
+      stroke : "#d7d7d7"
     }
   }
 });
 
-
 Theme.Smooth1 = Theme.initTheme(Theme.SmoothBase)
 
 Theme.Smooth2 = Theme.initTheme(Theme.SmoothBase, {
-  colors : [ '#7179cb','#4dceff','#79c850','#ffb65d','#fc694b','#9a9792'],
+  colors : [ '#00a3d7','#6ebb46','#f6c100','#ff6a00','#e32400','#423ba8'],
+  symbols : ['circle','diamond','square','triangle','triangle-down'],
   seriesOptions : {pieCfg : {
-    colors : [ '#7179cb','#4dceff','#79c850','#ffb65d','#fc694b','#9a9792']
+    colors : [ '#00a3d7','#6ebb46','#f6c100','#ff6a00','#e32400','#423ba8']
   }}
 })
 
