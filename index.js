@@ -103,6 +103,21 @@ Theme.Origin = Theme({
       animate : true,
       markers : lineCfg.markers
     },
+    arearangeCfg: {
+      markers : null,
+      line: {
+        stroke: null
+      },
+      area: {
+        stroke: null
+      },
+      lineActived: {
+        stroke: null
+      },
+      areaActived: {
+        stroke: null
+      }
+    },
     flagCfg: {
       flags:{
           flag:{
@@ -331,7 +346,7 @@ Theme.SmoothBase = Theme.initTheme(Theme.Origin, {
   }
 });
 
-Theme.Smooth1 = Theme.initTheme(Theme.SmoothBase)
+Theme.Smooth1 = Theme.initTheme(Theme.SmoothBase);
 
 Theme.Smooth2 = Theme.initTheme(Theme.SmoothBase, {
   colors : [ '#00a3d7','#6ebb46','#f6c100','#ff6a00','#e32400','#423ba8'],
