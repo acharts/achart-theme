@@ -1,6 +1,6 @@
 {
   "name": "achart-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "themes for acharts",
   "keywords": ["chart"],
   "homepage": "https://github.com/acharts/achart-theme",
@@ -16,7 +16,7 @@
   "spm": {
     "main": "index.js",
     "dependencies": {
-      "achart-util" : "1.0.0"
+      "achart-util" : "~1.1.0"
     },
     "devDependencies": {
       "expect.js": "0.3.1"
